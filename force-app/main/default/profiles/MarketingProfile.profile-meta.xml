@@ -111,7 +111,11 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
-        <apexClass>VonageApiIntegrationRadek</apexClass>
+        <apexClass>VonageCaseSelector</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VonageMessageApiIntegration</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -677,6 +681,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>SendSitRequests</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ShareFilesWithNetworks</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

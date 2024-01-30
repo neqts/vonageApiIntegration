@@ -1,8 +1,8 @@
 public inherited sharing class VonageCaseSelector {
-    public static Case selectCaseById(Id caseId){
-        return selectMultipleCasesByIds(new Set<Id>{caseId})[0]; 
+    public static Case selectCaseById(String caseNumber){
+        return selectMultipleCasesByIds(new Set<String>{caseNumber})[0];
     }
-    public static List<Case> selectMultipleCasesByIds(Set<Id> caseIds){
-        return [SELECT Id, CaseNumber, Subject FROM Case WHERE Id IN : caseIds]; 
+    public static List<Case> selectMultipleCasesByIds(Set<String> caseNumbers){
+        return [SELECT Id, vonageCallToCustomerInProgress__c, VonageCurrentUUID__c FROM Case WHERE CaseNumber IN : caseNumbers];
     }
 }
