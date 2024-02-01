@@ -54,6 +54,7 @@ public class vonageNaturalLanguageAPI {
         if (sentimentResult != null) {
             VonageCall__c callToUpdate = new VonageCall__c(Id = callId, Evaluation__c = String.valueOf(sentimentResult.score));
             update callToUpdate;
+            
         }
     }
     @future(callout=true)
