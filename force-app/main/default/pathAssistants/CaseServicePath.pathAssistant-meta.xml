@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>CaseServicePath</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Try to start as soon as possible, case must be closed with proper SLA&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;In the case details you have all of information gathered so far, if you need anything more, you can use automated system, which will call and talk with customer, just click on &amp;quot;Vonage Customer Call&amp;quot; &lt;/p&gt;</info>
+        <picklistValueName>Working</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>
