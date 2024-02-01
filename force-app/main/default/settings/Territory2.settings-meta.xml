@@ -4,4 +4,6 @@
     <defaultCaseAccessLevel>None</defaultCaseAccessLevel>
     <defaultContactAccessLevel>Edit</defaultContactAccessLevel>
     <defaultOpportunityAccessLevel>None</defaultOpportunityAccessLevel>
+    <enableTerritoryManagement2>false</enableTerritoryManagement2>
+    <t2ForecastAccessLevel>Read</t2ForecastAccessLevel>
 </Territory2Settings>

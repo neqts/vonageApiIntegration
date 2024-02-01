@@ -352,6 +352,14 @@
         <field>Vonage_Integration_Data__mdt.Vonage_calls_API_endpoint__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>VonageCallsTaskCreation</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Vonage_Send_SMS_Summary</flow>
+    </flowAccesses>
     <layoutAssignments>
         <layout>Account-Account %28Marketing%29 Layout</layout>
     </layoutAssignments>
