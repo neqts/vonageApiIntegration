@@ -7,9 +7,16 @@
         <callbackUrl>https://api-eu.vonage.com/oauth/redirect</callbackUrl>
         <consumerKey>3MVG98Gq2O8Po4Zmy3G6H5YjvvJdNRf33Q6Gxxr9eSsTPxiXgfDaqhVAw38PbnpQkXWMspEUlziaEjvoOSK.N</consumerKey>
         <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>true</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
         <scopes>Api</scopes>
         <scopes>Web</scopes>
         <scopes>Full</scopes>
         <scopes>RefreshToken</scopes>
     </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>BYPASS</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
 </ConnectedApp>

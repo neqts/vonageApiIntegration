@@ -7,6 +7,7 @@
         <locationY>323</locationY>
         <actionName>VonageMessageApiIntegration</actionName>
         <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>callIds</name>
             <value>
@@ -14,6 +15,7 @@
             </value>
         </inputParameters>
     </actionCalls>
+    <apiVersion>59.0</apiVersion>
     <interviewLabel>Vonage Send SMS Summary {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Vonage Send SMS Summary</label>
     <processMetadataValues>
@@ -35,6 +37,15 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
-    <startElementReference>Send_SMS_Summary</startElementReference>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_SMS_Summary</targetReference>
+        </connector>
+        <object>VonageCall__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
     <status>Active</status>
 </Flow>
