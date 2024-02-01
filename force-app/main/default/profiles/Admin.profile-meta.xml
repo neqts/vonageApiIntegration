@@ -248,6 +248,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>VonageMeetingAPIController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>VonageMessageApiIntegration</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -352,9 +356,33 @@
         <field>Vonage_Integration_Data__mdt.Vonage_calls_API_endpoint__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Vonage_Meeting__c.Case__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Vonage_Meeting__c.Expiration_date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Vonage_Meeting__c.Host_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Vonage_Meeting__c.Room_name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <flowAccesses>
         <enabled>false</enabled>
         <flow>VonageCallsTaskCreation</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Vonage_Schedule_Follow_up_meeting</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -722,6 +750,9 @@
         <layout>Vonage_Integration_Data__mdt-Vonage Integration Data Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Vonage_Meeting__c-Vonage Meeting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Waitlist-%5F%5FMISSING LABEL%5F%5F PropertyFile - val Waitlist not found in section StandardLayouts</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -776,6 +807,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>VonageCall__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Vonage_Meeting__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <pageAccesses>

@@ -3,10 +3,15 @@
     <isExposed>true</isExposed>
     <targets>
         <target>lightning__RecordAction</target>
+        <target>lightning__FlowScreen</target>
     </targets>
     <targetConfigs>
         <targetConfig targets="lightning__RecordAction">
-            <actionType>Action</actionType>
+            <actionType>ScreenAction</actionType>
+        </targetConfig>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="meetingName" type="String" label="Meeting Name" description="Input variable for the component." required="true"/>
+            <property name="expirationDate" type="Datetime" label="expirationDate" description="Input variable for the component." required="true"/>
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>
