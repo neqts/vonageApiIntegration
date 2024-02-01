@@ -13,6 +13,7 @@ export default class ChatComponent extends LightningElement {
     @track messages = [];
     showButton = true;
     showChat = false;
+    
 
     get conversationData() {
         return this?._conversationData;

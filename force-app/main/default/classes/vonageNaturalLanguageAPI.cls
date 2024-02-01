@@ -15,8 +15,7 @@ public class vonageNaturalLanguageAPI {
             SentimentResult sentimentResult = new SentimentResult();
             sentimentResult.score = (Double) sentimentMap.get('score');
             sentimentResult.magnitude = (Double) sentimentMap.get('magnitude');
-            
-            System.debug(sentimentResult);
+          
             return sentimentResult;
         } else {
             return null;

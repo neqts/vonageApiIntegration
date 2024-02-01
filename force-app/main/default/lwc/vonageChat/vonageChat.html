@@ -13,6 +13,7 @@
                         <p key={mess.Id}>{mess.Name}</p>
                     </template>
                 </template>
+                
                 <template for:each={messages} for:item="message">
                     <p key={message.id} class={message.sender}>
                         Case Administrator: {message.text}

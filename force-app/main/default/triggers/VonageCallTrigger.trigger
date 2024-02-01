@@ -10,7 +10,6 @@ trigger VonageCallTrigger on VonageCall__c (after insert, after update) {
     if (!callsToUpdate.isEmpty()) {
         for (VonageCall__c call : callsToUpdate) {
             vonageNaturalLanguageAPI.analyzeSentimentAsync(call.Transcript__c, call.Id);
-            
             vonageNaturalLanguageAPI.analyzeEntitiesAsync(call.Transcript__c, call.Id);
         }
     }
