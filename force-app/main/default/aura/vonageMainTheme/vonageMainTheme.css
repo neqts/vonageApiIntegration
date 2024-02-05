@@ -1,0 +1,27 @@
+.THIS {
+  padding: 0;
+  margin: 0;
+  background: var(--colorLightGray);
+}
+.THIS .header-wrapper {
+  height: 80px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  .THIS .header-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .THIS .header-wrapper {
+    height: 56px;
+  }
+}
+
+@media (max-width: 320px) {
+  .THIS .header-wrapper {
+    height: 48px;
+  }
+}

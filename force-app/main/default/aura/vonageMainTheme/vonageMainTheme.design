@@ -1,0 +1,3 @@
+<design:component label="Vonage Theme Setting">
+  <design:attribute name="alertBanner" label="AlertBannerText" />
+</design:component>

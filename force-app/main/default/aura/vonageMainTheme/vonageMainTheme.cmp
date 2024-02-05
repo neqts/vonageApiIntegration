@@ -1,0 +1,17 @@
+<aura:component
+  implements="forceCommunity:themeLayout,flexipage:availableForAllPageTypes"
+  access="global"
+  description="Vonage Main Theme Layout"
+>
+  <ltng:require styles="{!$Resource.vonageStyleOverrider}" />
+  <aura:attribute name="alertBanner" type="String" default="" />
+  <div class="wrapper">
+    <header class="header-wrapper">
+      <c:vonageNavigationBar alertBannerValue="{!v.alertBanner}" />
+    </header>
+    <div class="content-wrapper">{!v.body}</div>
+    <footer class="footerwrapper">
+      <c:vonageFooter />
+    </footer>
+  </div>
+</aura:component>
